@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego PPT</title>
+    <title>Juego PPTLS</title>
     <!-- FONTAWESOME -->
     <!-- <script src="https://kit.fontawesome.com/9734ebead5.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -13,23 +13,29 @@
 </head>
 <body>
     <h5>Juego de PIEDRA-PAPEL-TIJERA-LAGARTO-SPOCK</h5>
-    <h6>Selecciona tu jugada</h6>
+    <h6>Selecciona tu jugada. Gana el mejor de tres.</h6>
+    <p>En caso de EMPATE, se jugará de nuevo hasta que haya un ganador.</p>
     <div class="options">
         <div class="button">
-            <button><i class="icono izquierda fas fa-hand-rock"></i></button>
+            <button onclick="jugar(0)"><i class="icono izquierda fas fa-hand-rock"></i></button>
         </div>
         <div class="button">
-            <button><i class="icono izquierda fas fa-hand-paper"></i></button>
+            <button onclick="jugar(1)"><i class="icono izquierda fas fa-hand-paper"></i></button>
         </div>
         <div class="button">
-            <button><i class="icono izquierda fas fa-hand-scissors"></i></button>
+            <button onclick="jugar(2)"><i class="icono izquierda fas fa-hand-scissors"></i></button>
         </div>
         <div class="button">
-            <button><i class="icono izquierda fas fa-hand-lizard"></i></button>
+            <button onclick="jugar(3)"><i class="icono izquierda fas fa-hand-lizard"></i></button>
         </div>
         <div class="button">
-            <button><i class="icono izquierda fas fa-hand-spock"></i></button>
+            <button onclick="jugar(4)"><i class="icono izquierda fas fa-hand-spock"></i></button>
         </div>
     </div>
+    <div id="choices"></div>
+    <div id="score"></div>
+    <div id="results"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
